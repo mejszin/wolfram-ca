@@ -29,7 +29,7 @@ if ARGV.length == 3
         # Show current iteration
         print "gen=" + iteration.to_s.rjust(iterations.to_s.length, "0") + " "
         # Show the tape 
-        print ca.tape.gsub("0", "░").gsub("1", "█") + " "
+        print ca.tape.gsub("0", "░").gsub("1", "▓") + " "
         # Show the count of state(1) cells
         print "n=" + ca.tape.count("1").to_s + "\n"
         # Generate next generation
